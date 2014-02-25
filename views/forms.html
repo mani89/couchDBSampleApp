@@ -1,0 +1,16 @@
+<h2>Forms</h2>
+
+<a href='/forms/new'>New Form</a>
+
+<ul>
+  {{#forms}}
+    <li>
+      <div class='forms'>
+        <a href='/forms/{{_id}}'>{{name}}</a>
+        <p>
+          {{body}}
+        </p>
+      </div>
+    </li>
+  {{/forms}}
+</ul>
